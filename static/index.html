@@ -1,0 +1,47 @@
+<!DOCTYPE>
+
+<html ng-app="contactList" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <title>Contact List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>-->
+
+
+
+</head>
+
+<body >
+<!--<input ng-model="binding">{{binding}}-->
+
+    <div class="container" ng-controller="ContactCtrl">
+        <h1>Contact List App</h1>
+        <!--<div ng-model="mainMessage">{{mainMessage}}</div>-->
+
+        <table class="table">
+            <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Comments</th>
+            </thead>
+
+            <tbody ng-repeat="l in list">
+                <td>{{l.name}}</td>
+                <td>{{l.email}}</td>
+                <td>{{l.number}}</td>
+                <td>{{l.comment}}</td>
+            </tbody>
+
+        </table>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="controllers/controller.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>-->
+</body>
+
+</html>
